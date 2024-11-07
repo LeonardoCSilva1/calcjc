@@ -1,0 +1,154 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --linear-gradient: linear-gradient(90deg,#2b4550, #a875fc, #5e4288);
+}
+
+body, html {
+    height: 100%;
+    width: 100;
+    background: var(--linear-gradient);
+}
+
+#bloco {
+    margin-top: 1.2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--linear-gradient);
+    color: rgb(255, 255, 255);
+
+}
+
+#calculadora {
+ 
+    background-color: #262626dc;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculadora h2 {
+    font-size: 30px;
+    position: relative;
+}
+
+#calculadora h2::before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: var(--linear-gradient);
+    bottom: 5px;
+}
+
+#input_box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.escreva {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.escreva label {
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+}
+
+.escreva input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #4c1d95;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+
+}
+
+.escreva input:focus{
+    outline: none;
+}
+
+#resultado {
+    text-align: center;
+}
+
+#total {
+    font-size: 40px;
+}
+
+#btn_calc {
+    background:var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 1.2%;
+    text-align: center;
+    background: var(--linear-gradient);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* -------------------- CSS PARA A CALCULADORA DE CONVERTER -------- */
+
+
+.calculadoraconv {
+    background-color: #262626dc;
+    padding: 40px;
+    margin-top: 20px;
+    margin-right: 3%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.calculadora h2 {
+    font-size: 30px;
+    position: relative;
+}
+
+.calculadora h2::before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: var(--linear-gradient);
+    bottom: 5px;
+}
+
+#btn_conversao {
+    background:var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
