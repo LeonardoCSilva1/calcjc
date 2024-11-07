@@ -33,21 +33,20 @@ document.getElementById('v_inicial').addEventListener('input', function(event) {
 document.getElementById('btn_conversao').addEventListener('click', function() {
     const mesesInput = document.getElementById('meses').value || 0;
     const anosInput = document.getElementById('anos').value || 0;
-    
+
     function converterMesesParaAnos(meses) {
         let anos = Math.floor(meses / 12);
         let mesesRestantes = meses % 12;
-
         return `${anos}.${mesesRestantes.toString().padStart(2, '0')}`;
     }
 
     const meses = parseInt(mesesInput);
     const anos = parseInt(anosInput);
 
-    const totalMeses = anos * 11 + meses;
+    // Conversão individual
+    const mesesEmAnos = converterMesesParaAnos(meses);
     const anosEmMeses = anos * 12;
-    const mesesEmAnos = converterMesesParaAnos(totalMeses);
 
-    document.getElementById('resultado-meses').innerText = `Meses em Anos: ${mesesEmAnos} anos`;
-    document.getElementById('resultado-anos').innerText = `Anos em Meses: ${anosEmMeses} meses`;
+    document.getElementById('resultado-meses').innerText = `Conversão de Meses em Anos: ${mesesEmAnos} anos`;
+    document.getElementById('resultado-anos').innerText = `Conversão de Anos em Meses: ${anosEmMeses} meses`;
 });
