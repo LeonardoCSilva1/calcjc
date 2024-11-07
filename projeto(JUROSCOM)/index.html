@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de juros compostos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <main id="bloco">
+            <div id="calculadora-conversao" class="calculadoraconv">
+                <h2>Converter Ano para Mês</h2>
+                <div id="input_box">
+                    <div class="escreva">
+                        <label for="meses">Meses para Anos:</label>
+                        <input type="number" id="meses" placeholder="Digite os meses" />
+                    </div>
+                    <div class="escreva">
+                        <label for="anos">Anos para Meses:</label>
+                        <input type="number" id="anos" placeholder="Digite os anos" />
+                    </div>
+                </div>
+                <button id="btn_conversao">Converter</button>
+                <div id="resultado-conversao">
+                    <p>Resultado:</p>
+                    <p id="resultado-meses">Meses em Anos: </p>
+                    <p id="resultado-anos">Anos em Meses: </p>
+                </div>
+            </div>
+            <div id="calculadora">
+                <h1>
+                    Calculadora de Juros compostos
+                </h1>
+                <div id="input_box">
+                    <div class="escreva">
+
+                        <label for="v_inicial">Valor inicial (capital):</label>
+                        <input type="number" name="v_inicial" id="v_inicial" placeholder="R$ 0,00">
+
+                    </div>
+                    <div class="escreva">
+
+                        <label for="taxaJ">Taxa de juros a.m:</label>
+                        <input type="number" name="taxaJ" id="taxaJ"placeholder="Juros %">
+
+                    </div>
+                    <div class="escreva">
+
+                        <label for="tempo">Tempo de rendimento a.m:</label>
+                        <input type="number" name="tempo" id="tempo" placeholder="Tempo a.m">
+
+                    </div>
+                </div>
+                <div class="resultado">
+                    <h4>Resultado:</h4>
+                    <span id="total">
+                        R$ 0,00
+                    </span>
+                </div>
+                <button id="btn_calc">
+                    Calcular
+                </button>
+            </div>
+        </main>
+
+        
+
+
+        <script src="script/script.js" type="text/javascript"></script>
+        <footer>&copy;LeoBolado</footer>
+</body>
+</html>
